@@ -25,7 +25,7 @@ class Post(models.Model):
     )
     title = models.CharField(max_length=100)
     content = models.TextField()
-    image = models.ImageField(upload_to=user_directory_path,default='https://m.media-amazon.com/images/M/MV5BODUyNzEwNDkzNl5BMl5BanBnXkFtZTcwMzcwMDYzOA@@._V1_.jpg')
+    image = models.ImageField(upload_to=user_directory_path,default='john_avatar.jpg')
     category = models.ForeignKey(Category, on_delete=models.PROTECT)
     publish_date = models.DateTimeField(auto_now_add=True)
     last_updated = models.DateTimeField(auto_now=True)
