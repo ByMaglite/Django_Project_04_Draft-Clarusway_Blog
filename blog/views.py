@@ -6,6 +6,6 @@ from .models import Post
 def post_list(request):
     gs = Post.objects.all()
     context = {
-        "objects_list":gs
+        "object_list":gs
     }
     return render(request,"blog/post_list.html", context)
